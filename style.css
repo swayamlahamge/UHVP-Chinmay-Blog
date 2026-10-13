@@ -1,0 +1,189 @@
+/* ==========================================================================
+   Chinmay Kasar - Simple & Bright Theme
+   ========================================================================== */
+
+:root {
+    --bg-main: #ffffff;
+    --bg-card: #f0fdf4; /* Light fresh green for hero */
+    --text-dark: #111827;
+    --text-mid: #374151;
+    --text-light: #6b7280;
+    --accent: #10b981; /* Bright vibrant green */
+    --accent-bold: #059669;
+    --border-color: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Hide the glowing orbs from the previous dark theme */
+.ambient-glow { 
+    display: none; 
+}
+
+/* ---------------- Nav ---------------- */
+.top-nav {
+    background: #ffffff;
+    border-bottom: 3px solid var(--accent);
+    padding: 1.2rem 0;
+}
+
+.nav-container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.badge { color: var(--accent-bold); text-transform: uppercase; }
+.college-tag { color: var(--text-light); }
+
+/* ---------------- Layout ---------------- */
+.page-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* ---------------- Hero Section ---------------- */
+.hero-card {
+    background-color: var(--bg-card);
+    border: 2px solid var(--accent);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero-meta {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.tag {
+    color: var(--accent-bold);
+    text-transform: uppercase;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.15rem;
+    color: var(--text-mid);
+    margin-bottom: 2rem;
+}
+
+/* Profile Badge */
+.profile-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: #ffffff;
+    padding: 0.5rem 1.2rem 0.5rem 0.5rem;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.avatar-ring {
+    width: 44px;
+    height: 44px;
+    background: var(--accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.profile-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name { font-weight: 800; color: var(--text-dark); font-size: 0.95rem; }
+.author-roll { font-size: 0.8rem; color: var(--text-light); }
+.author-roll strong { color: var(--accent-bold); }
+
+/* ---------------- Content Blocks ---------------- */
+.story-block {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.block-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent);
+    opacity: 0.3;
+    line-height: 1;
+}
+
+.block-content h2 {
+    color: var(--text-dark);
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+}
+
+.block-content p {
+    color: var(--text-mid);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ---------------- Images ---------------- */
+.media-card {
+    margin: 2.5rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.media-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.media-card figcaption {
+    padding: 1rem 1.5rem;
+    background: #f9fafb;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-style: italic;
+    border-top: 1px solid var(--border-color);
+}
+
+/* ---------------- Conclusion Box ---------------- */
+.conclusion-box {
+    background: var(--accent);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 16
